@@ -5,13 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Form</title>
     <style>
-        .contact-form {
-            max-width: 500px;
-            margin: 50px auto;
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
             padding: 20px;
-            background: #f9f9f9;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            margin: 0;
+            color: #4CAF50;
+        }
+
+        .contact-form {
+            background: #ffffff;
+            padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .contact-form h2 {
+            margin-top: 0;
+            font-size: 22px;
+            color: #333;
         }
 
         .form-group {
@@ -26,7 +55,7 @@
 
         input, textarea {
             width: 100%;
-            padding: 8px;
+            padding: 10px;
             border: 1px solid #ddd;
             border-radius: 4px;
             box-sizing: border-box;
@@ -68,42 +97,73 @@
         .contact-info a:hover {
             text-decoration: underline;
         }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 14px;
+            color: #777;
+        }
+
+        .footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
-    <div class="contact-form">
-        <h2>Contact Form</h2>
-
-        <!-- Contact Information Section -->
-        <div class="contact-info">
-            <p><strong>Phone:</strong> <a href="tel:+1234567890">+1 234 567 890</a></p>
-            <p><strong>Email:</strong> <a href="mailto:basichabittracker@gmail.com">basichabittracker@gmail.com</a></p>
+    <div class="container">
+        <!-- App Name -->
+        <div class="header">
+            <h1>Basic Habit Tracker</h1>
         </div>
 
-        <!-- Contact Form -->
-        <form action="https://formsubmit.co/basichabittracker@gmail.com" method="POST">
-            <div class="form-group">
-                <label for="name">Full Name:</label>
-                <input type="text" id="name" name="name" required>
+        <!-- Support Form Information -->
+        <div class="contact-form">
+            <h2>Support Form</h2>
+            <p>If you have any issues or need assistance, please use the form below to reach out to us. We'll get back to you as soon as possible!</p>
+
+            <!-- Contact Information Section -->
+            <div class="contact-info">
+                <p><strong>Email:</strong> <a href="mailto:basichabittracker@gmail.com">basichabittracker@gmail.com</a></p>
             </div>
 
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
+            <!-- Contact Form -->
+            <form action="https://formsubmit.co/basichabittracker@gmail.com" method="POST">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
 
-            <div class="form-group">
-                <label for="subject">Subject:</label>
-                <input type="text" id="subject" name="subject" required>
-            </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
 
-            <div class="form-group">
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-            </div>
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
 
-            <button type="submit">Submit</button>
-        </form>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>
+                <a href="#">Privacy Policy</a> | <a href="https://caring-minibus-8fb.notion.site/Privacy-Policy-Basic-Habit-Tracker-1412c594b47280388587ec487a266faf?pvs=4">Terms of Use</a>
+            </p>
+        </div>
     </div>
 </body>
 </html>
