@@ -49,11 +49,38 @@
         button:hover {
             background: #45a049;
         }
+
+        .contact-info {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #e9f7e9;
+            border-left: 4px solid #4CAF50;
+            border-radius: 4px;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .contact-info a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
     <div class="contact-form">
         <h2>Contact Form</h2>
+
+        <!-- Contact Information Section -->
+        <div class="contact-info">
+            <p><strong>Phone:</strong> <a href="tel:+1234567890">+1 234 567 890</a></p>
+            <p><strong>Email:</strong> <a href="mailto:basichabittracker@gmail.com">basichabittracker@gmail.com</a></p>
+        </div>
+
+        <!-- Contact Form -->
         <form action="https://formsubmit.co/basichabittracker@gmail.com" method="POST">
             <div class="form-group">
                 <label for="name">Full Name:</label>
